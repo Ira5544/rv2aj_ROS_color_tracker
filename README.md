@@ -5,34 +5,39 @@ Pacotes ROS utilizados para o trabalho.
 1.Extraia os arquivos compactados para a pasta src do ambiente ROS que estiver utilizando (catkin_ws, ws_moveit, etc).
 2. Se estiver utilizando o catkin_ws, abra o terminal e digite: 
 
-    1. cd ~/catkin_ws
-    2. catkin_make
-    
+```
+cd ~/catkin_ws
+catkin_make
+```
+
 3. Se estiver utilizando o ws_moveit, abra o terminal e digite:
 
-    1. cd ~/ws_moveit
-    2. catkin build
-
-
+```
+cd ~/ws_moveit
+catkin build
+```
 
 4. Com o ROS inicializado, abra uma nova janela do terminal.
-
 5. Digite:
 
-    1. cd ~/catkin_ws
-    2. source devel/setup.bash
-    3. roslaunch rv2aj_moveit_config demo.launch
-  
+```
+cd ~/catkin_ws
+source devel/setup.bash
+roslaunch rv2aj_moveit_config demo.launch
+```
+
 Isso irá inicializar o URDF do braço robótico no Rviz.
 
 6. Abra uma nova janela do terminal.
 
 7. Digite:
 
-    1. cd ~/catkin_ws
-    2. source devel/setup.bash
-    3. rosrun color_tracker color.py
-  
+```
+cd ~/catkin_ws
+source devel/setup.bash
+rosrun color_tracker color.py
+```  
+
 8. Após garantir que as peças foram colocadas no campo de visão da sua câmera, ajuste os parâmetros HSV nas janelas que aparecerem.
 
 Note que as janelas "imagemA", "imagemR", "imagemL", "imagemV", "imagemVr" e "imagemOB" correspondem às cores Azul, Roxo, Laranja, Verde,
@@ -53,18 +58,22 @@ centro do contorno de cada peça.
 
 10. Digite:
 
-    1. cd ~/catkin_ws
-    2. source devel/setup.bash
-    3. rosrun teste teste
-    
+```
+cd ~/catkin_ws
+source devel/setup.bash
+rosrun teste teste
+```
+
 11. Abra uma nova janela no terminal.
 
 12. Digite:
 
-    1. cd ~/catkin_ws
-    2. source devel/setup.bash
-    3. rosrun caixa plot_caixa.py
-    
+```
+cd ~/catkin_ws
+source devel/setup.bash
+rosrun caixa plot_caixa.py
+```  
+
 13. Certifique-se de que o código de detecção de cores está rodando e publicando as coordenadas das peças!!
 Irá aparecer uma janela "teste".  Clique nela e aperte R. Isso fará com que o obstáculo detectado pela câmera seja publicado no Rviz.
 
@@ -72,26 +81,32 @@ Irá aparecer uma janela "teste".  Clique nela e aperte R. Isso fará com que o 
 
 15. Digite:
 
-    1. cd ~/catkin_ws
-    2. source devel/setup.bash
-    3. rosrun rviz_handler move.py
-    
+```
+cd ~/catkin_ws
+source devel/setup.bash
+rosrun rviz_handler move.py
+```   
+
 16. Abra uma nova janela no terminal.
 
 17. Digite:
 
-     1. cd ~/catkin_ws
-     2. source devel/setup.bash
-     3. rosrun rviz_handler move_teste_matriz.py
-    
+```
+cd ~/catkin_ws
+source devel/setup.bash
+rosrun rviz_handler move_teste_matriz.py
+```
+
 18.Abra uma nova janela no terminal.
 
 19.Digite:
 
-    1. cd ~/catkin_ws
-    2. source devel/setup.bash
-    3. rosrun rviz_handler Rviz_planner.py
-    
+```
+cd ~/catkin_ws
+source devel/setup.bash
+rosrun rviz_handler Rviz_planner.py
+``` 
+
 20.Certifique-se de que a posição do robô é a mesma do Rviz. Irá aparecer uma janela "Traj". Clique na janela e aperte "P".
 Isso fará com que o planejamento de trajetória seja iniciado.
     
