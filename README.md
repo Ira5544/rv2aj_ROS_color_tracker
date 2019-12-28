@@ -1,7 +1,6 @@
 # rv2aj_ROS_color_tracker
 Pacotes ROS utilizados para o trabalho.
 
-=============================INSTALAÇÃO====================================================
 
 1.Extraia os arquivos compactados para a pasta src do ambiente ROS que estiver utilizando (catkin_ws, ws_moveit, etc).
 2. Se estiver utilizando o catkin_ws, abra o terminal e digite: 
@@ -15,11 +14,10 @@ Pacotes ROS utilizados para o trabalho.
     2. catkin build
 
 
-=============================EXECUÇÃO======================================================
 
-1. Com o ROS inicializado, abra uma nova janela do terminal.
+4. Com o ROS inicializado, abra uma nova janela do terminal.
 
-2. Digite:
+5. Digite:
 
     1. cd ~/catkin_ws
     2. source devel/setup.bash
@@ -27,15 +25,15 @@ Pacotes ROS utilizados para o trabalho.
   
 Isso irá inicializar o URDF do braço robótico no Rviz.
 
-3. Abra uma nova janela do terminal.
+6. Abra uma nova janela do terminal.
 
-4. Digite:
+7. Digite:
 
     1. cd ~/catkin_ws
     2. source devel/setup.bash
     3. rosrun color_tracker color.py
   
-5. Após garantir que as peças foram colocadas no campo de visão da sua câmera, ajuste os parâmetros HSV nas janelas que aparecerem.
+8. Após garantir que as peças foram colocadas no campo de visão da sua câmera, ajuste os parâmetros HSV nas janelas que aparecerem.
 
 Note que as janelas "imagemA", "imagemR", "imagemL", "imagemV", "imagemVr" e "imagemOB" correspondem às cores Azul, Roxo, Laranja, Verde,
 Vermelho e à cor do obstáculo, respectivamente. Porém, você pode utilizar os sliders para ajustá-las para a cor de que bem desejar. 
@@ -51,49 +49,49 @@ A janela "frame" mostra o que a câmera utilizada está "vendo".
 Após realizar os ajustes, clique na janela "frame" e aperte a tecla S. Isso fará com que o código comece a publicar as coordenadas do
 centro do contorno de cada peça.
 
-6. Abra uma nova janela no terminal.
+9. Abra uma nova janela no terminal.
 
-7. Digite:
+10. Digite:
 
     1. cd ~/catkin_ws
     2. source devel/setup.bash
     3. rosrun teste teste
     
-8. Abra uma nova janela no terminal.
-
-9. Digite:
-
-    1. cd ~/catkin_ws
-    2. source devel/setup.bash
-    3. rosrun caixa plot_caixa.py
-    
-10. Certifique-se de que o código de detecção de cores está rodando e publicando as coordenadas das peças!!
-Irá aparecer uma janela "teste".  Clique nela e aperte R. Isso fará com que o obstáculo detectado pela câmera seja publicado no Rviz.
-
 11. Abra uma nova janela no terminal.
 
 12. Digite:
 
     1. cd ~/catkin_ws
     2. source devel/setup.bash
+    3. rosrun caixa plot_caixa.py
+    
+13. Certifique-se de que o código de detecção de cores está rodando e publicando as coordenadas das peças!!
+Irá aparecer uma janela "teste".  Clique nela e aperte R. Isso fará com que o obstáculo detectado pela câmera seja publicado no Rviz.
+
+14. Abra uma nova janela no terminal.
+
+15. Digite:
+
+    1. cd ~/catkin_ws
+    2. source devel/setup.bash
     3. rosrun rviz_handler move.py
     
-13. Abra uma nova janela no terminal.
+16. Abra uma nova janela no terminal.
 
-14. Digite:
+17. Digite:
 
      1. cd ~/catkin_ws
      2. source devel/setup.bash
      3. rosrun rviz_handler move_teste_matriz.py
     
-15.Abra uma nova janela no terminal.
+18.Abra uma nova janela no terminal.
 
-16.Digite:
+19.Digite:
 
     1. cd ~/catkin_ws
     2. source devel/setup.bash
     3. rosrun rviz_handler Rviz_planner.py
     
-17.Certifique-se de que a posição do robô é a mesma do Rviz. Irá aparecer uma janela "Traj". Clique na janela e aperte "P".
+20.Certifique-se de que a posição do robô é a mesma do Rviz. Irá aparecer uma janela "Traj". Clique na janela e aperte "P".
 Isso fará com que o planejamento de trajetória seja iniciado.
     
