@@ -81,9 +81,9 @@ Irá aparecer uma janela "teste".  Clique nela e aperte R. Isso fará com que o 
 
 14. Digite:
 
-   1. cd ~/catkin_ws
-   2. source devel/setup.bash
-   3. rosrun rviz_handler move_teste_matriz.py
+    1. cd ~/catkin_ws
+    2. source devel/setup.bash
+    3. rosrun rviz_handler move_teste_matriz.py
     
 15.Abra uma nova janela no terminal.
 
