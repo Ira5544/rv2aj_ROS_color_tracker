@@ -13,16 +13,17 @@ Pacotes ROS utilizados para o trabalho.
 
     1. cd ~/ws_moveit
     2. catkin build
-    
+
+
 =============================EXECUÇÃO======================================================
 
 1. Com o ROS inicializado, abra uma nova janela do terminal.
 
 2. Digite:
 
-   1. cd ~/catkin_ws
-   2. source devel/setup.bash
-   3. roslaunch rv2aj_moveit_config demo.launch
+    1. cd ~/catkin_ws
+    2. source devel/setup.bash
+    3. roslaunch rv2aj_moveit_config demo.launch
   
 Isso irá inicializar o URDF do braço robótico no Rviz.
 
@@ -30,9 +31,9 @@ Isso irá inicializar o URDF do braço robótico no Rviz.
 
 4. Digite:
 
-   1. cd ~/catkin_ws
-   2. source devel/setup.bash
-   3. rosrun color_tracker color.py
+    1. cd ~/catkin_ws
+    2. source devel/setup.bash
+    3. rosrun color_tracker color.py
   
 5. Após garantir que as peças foram colocadas no campo de visão da sua câmera, ajuste os parâmetros HSV nas janelas que aparecerem.
 
@@ -54,17 +55,17 @@ centro do contorno de cada peça.
 
 7. Digite:
 
-   1. cd ~/catkin_ws
-   2. source devel/setup.bash
-   3. rosrun teste teste
+    1. cd ~/catkin_ws
+    2. source devel/setup.bash
+    3. rosrun teste teste
     
 8. Abra uma nova janela no terminal.
 
 9. Digite:
 
-   1. cd ~/catkin_ws
-   2. source devel/setup.bash
-   3. rosrun caixa plot_caixa.py
+    1. cd ~/catkin_ws
+    2. source devel/setup.bash
+    3. rosrun caixa plot_caixa.py
     
 10. Certifique-se de que o código de detecção de cores está rodando e publicando as coordenadas das peças!!
 Irá aparecer uma janela "teste".  Clique nela e aperte R. Isso fará com que o obstáculo detectado pela câmera seja publicado no Rviz.
@@ -73,17 +74,17 @@ Irá aparecer uma janela "teste".  Clique nela e aperte R. Isso fará com que o 
 
 12. Digite:
 
-   1. cd ~/catkin_ws
-   2. source devel/setup.bash
-   3. rosrun rviz_handler move.py
+    1. cd ~/catkin_ws
+    2. source devel/setup.bash
+    3. rosrun rviz_handler move.py
     
 13. Abra uma nova janela no terminal.
 
 14. Digite:
 
-    1. cd ~/catkin_ws
-    2. source devel/setup.bash
-    3. rosrun rviz_handler move_teste_matriz.py
+     1. cd ~/catkin_ws
+     2. source devel/setup.bash
+     3. rosrun rviz_handler move_teste_matriz.py
     
 15.Abra uma nova janela no terminal.
 
